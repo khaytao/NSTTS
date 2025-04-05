@@ -1,0 +1,53 @@
+# Python virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Model checkpoints and data
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+
+# Environment variables
+.env
+.env.local
+
+# Hugging Face cache
+.cache/
+.huggingface/
+
+# Project specific
+ProDiff/
+data/ 
