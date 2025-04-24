@@ -49,5 +49,5 @@ temp/
 .huggingface/
 
 # Project specific
-ProDiff/
+
 data/ 
