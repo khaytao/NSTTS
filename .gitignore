@@ -50,4 +50,7 @@ temp/
 
 # Project specific
 
-data/ 
+data/
+
+# baseline test results
+baseline tests/
