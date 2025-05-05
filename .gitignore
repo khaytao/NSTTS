@@ -49,5 +49,8 @@ temp/
 .huggingface/
 
 # Project specific
-ProDiff/
-data/ 
+
+data/
+
+# baseline test results
+baseline tests/

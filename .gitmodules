@@ -1,0 +1,6 @@
+[submodule "ProDiff"]
+	path = ProDiff
+	url = https://github.com/YossiSella/ProDiff.git
+[submodule "ControlNet"]
+	path = ControlNet
+	url = https://github.com/YossiSella/ControlNet.git
