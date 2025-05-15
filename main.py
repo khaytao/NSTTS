@@ -6,13 +6,16 @@ import os
 import torch
 import numpy as np
 
-prodiff_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "Prodiff"))
+prodiff_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "ProDiff"))
 
 print(prodiff_path, os.path.isdir(prodiff_path))
 
 sys.path.insert(0, prodiff_path)
 print(os.getcwd())
 
-command = "cd ProDiff && python -m inference.ProDiff_Teacher --config modules/ProDiff/config/prodiff_teacher.yaml --exp_name ProDiff_Teacher --reset --hparams='N=8,text=\"Hello, how are you?\",pitch_shift_semitones=2,sigma=0.5'"
+txt = "Hello this is a test."  # Replace with your desired text
+hparams = f"N=8,text='{txt}'"
+print(hparams)
+command = f"cd ProDiff && python -m inference.ProDiff_Teacher --config modules/ProDiff/config/prodiff_teacher.yaml --exp_name ProDiff_Teacher --reset --hparams={hparams}"
 
 os.system(command)
