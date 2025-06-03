@@ -4,3 +4,6 @@
 [submodule "ControlNet"]
 	path = ControlNet
 	url = https://github.com/YossiSella/ControlNet.git
+[submodule "Speech-Backbones"]
+	path = Speech-Backbones
+	url = https://github.com/YossiSella/Speech-Backbones.git
