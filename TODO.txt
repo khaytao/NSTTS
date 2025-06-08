@@ -1,3 +1,9 @@
+TODO:
+1. create clean dataset audio/text
+2. train Prodiff on dataset
+
+
+OLD TODO
 1. Load a trained Prodiff model in a python file
 2. set up a control-net for the model - Follow guide at ControlNet/docs/train.md
 3. Set up an audio/prompt dataset
