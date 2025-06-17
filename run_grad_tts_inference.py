@@ -19,11 +19,15 @@ parser.add_argument("--model", type=str, required=True, choices=["grad-tts", "gr
                     help="Which pretrained model to use.")
 parser.add_argument("--timesteps", type=int, default=5, help="Number of timesteps (t)")
 parser.add_argument("--speaker", type=int, default=0, help="Speaker ID to synthesize")
+parser.add_argument("--checkpoint", type=str, default=None, help="Optional path to custom checkpoint")
 args = parser.parse_args()
 
 # Resolve checkpoint path
-ckpt_filename = f"{args.model}.pt"
-ckpt_path = os.path.join(project_path, "checkpts", ckpt_filename)
+if args.checkpoint:
+    ckpt_path = args.checkpoint
+else:
+    ckpt_filename = f"{args.model}.pt"
+    ckpt_path = os.path.join(project_path, "checkpts", ckpt_filename)
 
 # Load checkpoint
 ckpt = torch.load(ckpt_path, map_location='cpu')
@@ -45,6 +49,7 @@ else:
 params.n_spks = n_spks
 
 print(f"Running inference with model: {args.model}")
+print(f"Using checkpoint: {ckpt_path}")
 print(f"n_spks automatically set to: {n_spks}")
 print(f"Timesteps: {args.timesteps}")
 print(f"Speaker ID: {args.speaker}")
