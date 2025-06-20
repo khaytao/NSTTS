@@ -54,3 +54,12 @@ data/
 
 # baseline test results
 baseline tests/
+
+# LJSpeech dataset audio files
+datasets/LJSpeech-1.1/LJSpeech-1.1/wavs/*
+datasets/LJSpeech-1.1.tar.bz2
+
+# Fill50k dataset
+datasets/fill50k.zip
+datasets/fill50k/fill50k/source/*
+datasets/fill50k/fill50k/target/*
