@@ -56,7 +56,7 @@ print(f"Speaker ID: {args.speaker}")
 
 # Build inference command
 inference_command = [
-    "python",
+    sys.executable,
     "inference.py",
     "-f", os.path.join(project_path, "resources", "filelists", "synthesis.txt"),
     "-c", ckpt_path,
