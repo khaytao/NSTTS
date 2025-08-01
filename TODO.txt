@@ -1,6 +1,6 @@
 TODO:
-1. create clean dataset audio/text
-2. train Prodiff on dataset
+1. create clean/noisy dataset audio/text
+2. add control to grad-tts
 
 
 OLD TODO
