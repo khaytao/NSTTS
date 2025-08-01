@@ -63,3 +63,5 @@ datasets/LJSpeech-1.1.tar.bz2
 datasets/fill50k.zip
 datasets/fill50k/fill50k/source/*
 datasets/fill50k/fill50k/target/*
+
+ datasets/
